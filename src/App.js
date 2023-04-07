@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import React from 'react';
 import { Container } from 'react-bootstrap';
-import { FaSun } from "react-icons/fa";
 import './App.css';
 import Cities from './components/Cities';
 import CitiesDefault from './components/CitiesDefault';
