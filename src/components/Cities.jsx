@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaSun, FaCloud } from "react-icons/fa";
-import Forecast from "./Forecast";
 
 function Cities() {
     const [weather, setWeather] = useState()
@@ -11,8 +10,6 @@ function Cities() {
     const [weatherDescription, setWeatherDescription] = useState()
     const [name, setName] = useState()
     const [search, setSearch] = useState('')
-    const [lat, setLat] = useState()
-    const [lon, setLon] = useState()
 
     const api = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=81ee83578c6c269602c3144eb5ce6948`
 
@@ -29,8 +26,6 @@ function Cities() {
                     setWeatherDescription(d.weather[0].description)
                     setCountry(d.sys.country)
                     setWind(d.wind.speed)
-                    setLat(d.coord.lat)
-                    setLon(d.coord.lon)
                 })
         }
     }
